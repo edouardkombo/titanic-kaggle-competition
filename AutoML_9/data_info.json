@@ -1,0 +1,50 @@
+{
+    "columns": [
+        "Pclass",
+        "Sex",
+        "Age",
+        "SibSp",
+        "Parch",
+        "Ticket",
+        "Fare",
+        "Embarked"
+    ],
+    "rows": 788,
+    "cols": 8,
+    "target_is_numeric": true,
+    "columns_info": {
+        "Pclass": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "Sex": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "Age": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "SibSp": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "Parch": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "Ticket": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "Fare": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "Embarked": [
+            "categorical",
+            "categorical_to_onehot"
+        ]
+    },
+    "target_info": []
+}
