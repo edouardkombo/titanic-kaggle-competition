@@ -1,0 +1,50 @@
+{
+    "columns": [
+        "Survived",
+        "Pclass",
+        "Name",
+        "Age",
+        "Fare",
+        "Embarked",
+        "FamilySize",
+        "FareGroup"
+    ],
+    "rows": 801,
+    "cols": 8,
+    "target_is_numeric": true,
+    "columns_info": {
+        "Survived": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "Pclass": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "Name": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "Age": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "Fare": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "Embarked": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "FamilySize": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "FareGroup": [
+            "categorical",
+            "categorical_to_onehot"
+        ]
+    },
+    "target_info": []
+}

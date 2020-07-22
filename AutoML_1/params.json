@@ -1,0 +1,7 @@
+{
+    "ml_task": "binary_classification",
+    "optimize_metric": "logloss",
+    "saved": [
+        "AutoML_1/1_Default_CatBoost"
+    ]
+}
