@@ -1,49 +1,57 @@
 {
     "columns": [
         "Survived",
-        "Pclass",
-        "Name",
-        "Age",
+        "Sex",
+        "SibSp",
+        "Parch",
         "Fare",
         "Embarked",
+        "Rich",
+        "Poor",
+        "MiddleClass",
+        "AgeSelectionWhenRich",
+        "AgeSelectionWhenMiddle",
+        "AgeSelectionWhenPoor",
         "FamilySize",
-        "FareGroup"
+        "FamilyCombo",
+        "Title",
+        "TitleEmbarkedSelection",
+        "TicketCategory"
     ],
-    "rows": 801,
-    "cols": 8,
+    "rows": 472,
+    "cols": 17,
     "target_is_numeric": true,
     "columns_info": {
-        "Survived": [
-            "categorical",
-            "categorical_to_int"
+        "Survived": [],
+        "Sex": [],
+        "SibSp": [
+            "scale"
         ],
-        "Pclass": [
-            "categorical",
-            "categorical_to_onehot"
-        ],
-        "Name": [
-            "categorical",
-            "categorical_to_int"
-        ],
-        "Age": [
-            "categorical",
-            "categorical_to_onehot"
-        ],
+        "Parch": [],
         "Fare": [
-            "categorical",
-            "categorical_to_int"
+            "scale"
         ],
         "Embarked": [
-            "categorical",
-            "categorical_to_onehot"
+            "missing_values"
         ],
+        "Rich": [],
+        "Poor": [],
+        "MiddleClass": [
+            "scale"
+        ],
+        "AgeSelectionWhenRich": [],
+        "AgeSelectionWhenMiddle": [],
+        "AgeSelectionWhenPoor": [],
         "FamilySize": [
-            "categorical",
-            "categorical_to_onehot"
+            "scale"
         ],
-        "FareGroup": [
-            "categorical",
-            "categorical_to_onehot"
+        "FamilyCombo": [],
+        "Title": [
+            "scale"
+        ],
+        "TitleEmbarkedSelection": [],
+        "TicketCategory": [
+            "scale"
         ]
     },
     "target_info": []

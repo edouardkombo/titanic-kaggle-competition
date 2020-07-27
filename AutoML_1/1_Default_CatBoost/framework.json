@@ -1,8 +1,17 @@
 {
-    "uid": "f2d1b90a-3aed-4f86-bb21-4ddf96ba125b",
+    "uid": "e4798a84-5604-49f7-8d71-d62eac6cbf57",
     "name": "1_Default_CatBoost",
     "preprocessing": [
         {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "Embarked": 0.0
+                    },
+                    "datetime_columns": []
+                }
+            ],
             "ml_task": "binary_classification"
         }
     ],
@@ -11,7 +20,7 @@
             "library_version": "0.23.1",
             "algorithm_name": "CatBoost",
             "algorithm_short_name": "CatBoost",
-            "uid": "1a031f1a-713e-4a5e-8709-f9b0d4e1197a",
+            "uid": "5405b9b7-d111-4fc0-a74b-7a6bbdd0cb93",
             "params": {
                 "model_type": "CatBoost",
                 "ml_task": "binary_classification",
@@ -33,7 +42,11 @@
             "max_cols_limit": null
         },
         "preprocessing": {
-            "columns_preprocessing": {},
+            "columns_preprocessing": {
+                "Embarked": [
+                    "na_fill_median"
+                ]
+            },
             "target_preprocessing": [
                 "na_exclude"
             ],
@@ -68,8 +81,8 @@
     ],
     "predictions_fname": "AutoML_1/1_Default_CatBoost/predictions_validation.csv",
     "metric_name": "logloss",
-    "final_loss": 0.0003253282345639571,
-    "train_time": 10.324585676193237,
+    "final_loss": 0.000777144330637632,
+    "train_time": 8.030448913574219,
     "is_stacked": false,
-    "threshold": 0.5000392748762534
+    "threshold": 0.49998475919276386
 }

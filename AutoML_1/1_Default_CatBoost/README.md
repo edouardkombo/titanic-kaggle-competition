@@ -19,4 +19,4 @@ logloss
 
 ## Training time
 
-10.3 seconds
+8.0 seconds
