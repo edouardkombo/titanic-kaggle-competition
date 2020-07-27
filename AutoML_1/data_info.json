@@ -22,36 +22,74 @@
     "cols": 17,
     "target_is_numeric": true,
     "columns_info": {
-        "Survived": [],
-        "Sex": [],
-        "SibSp": [
-            "scale"
+        "Survived": [
+            "categorical",
+            "categorical_to_int"
         ],
-        "Parch": [],
+        "Sex": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "SibSp": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "Parch": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
         "Fare": [
-            "scale"
+            "categorical",
+            "categorical_to_int"
         ],
         "Embarked": [
-            "missing_values"
+            "missing_values",
+            "categorical",
+            "categorical_to_onehot"
         ],
-        "Rich": [],
-        "Poor": [],
+        "Rich": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "Poor": [
+            "categorical",
+            "categorical_to_int"
+        ],
         "MiddleClass": [
-            "scale"
+            "categorical",
+            "categorical_to_int"
         ],
-        "AgeSelectionWhenRich": [],
-        "AgeSelectionWhenMiddle": [],
-        "AgeSelectionWhenPoor": [],
+        "AgeSelectionWhenRich": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "AgeSelectionWhenMiddle": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "AgeSelectionWhenPoor": [
+            "categorical",
+            "categorical_to_int"
+        ],
         "FamilySize": [
-            "scale"
+            "categorical",
+            "categorical_to_onehot"
         ],
-        "FamilyCombo": [],
+        "FamilyCombo": [
+            "categorical",
+            "categorical_to_int"
+        ],
         "Title": [
-            "scale"
+            "categorical",
+            "categorical_to_onehot"
         ],
-        "TitleEmbarkedSelection": [],
+        "TitleEmbarkedSelection": [
+            "categorical",
+            "categorical_to_int"
+        ],
         "TicketCategory": [
-            "scale"
+            "categorical",
+            "categorical_to_int"
         ]
     },
     "target_info": []
