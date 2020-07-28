@@ -1,2 +1,2 @@
 name,model_type,metric_type,metric_value,train_time
-1_Default_CatBoost,CatBoost,logloss,0.000777144330637632,11.2
+1_Default_CatBoost,CatBoost,logloss,0.0005809154239251171,20.86

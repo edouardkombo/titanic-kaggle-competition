@@ -1,5 +1,5 @@
 {
-    "uid": "2da39c9b-d54e-46b7-80f5-0822886b6e64",
+    "uid": "e0aa1037-abe8-4cde-a47e-b8d92c977796",
     "name": "1_Default_CatBoost",
     "preprocessing": [
         {
@@ -7,6 +7,8 @@
                 {
                     "fill_method": "na_fill_median",
                     "fill_params": {
+                        "Age": 27.0,
+                        "Cabin": "F2",
                         "Embarked": 0.0
                     },
                     "datetime_columns": []
@@ -20,7 +22,7 @@
             "library_version": "0.23.1",
             "algorithm_name": "CatBoost",
             "algorithm_short_name": "CatBoost",
-            "uid": "7470796f-58dc-42ce-b7db-c08b2fb2da49",
+            "uid": "425717e8-699f-4887-963b-eea45f5a339f",
             "params": {
                 "model_type": "CatBoost",
                 "ml_task": "binary_classification",
@@ -43,6 +45,12 @@
         },
         "preprocessing": {
             "columns_preprocessing": {
+                "Age": [
+                    "na_fill_median"
+                ],
+                "Cabin": [
+                    "na_fill_median"
+                ],
                 "Embarked": [
                     "na_fill_median"
                 ]
@@ -81,8 +89,8 @@
     ],
     "predictions_fname": "AutoML_1/1_Default_CatBoost/predictions_validation.csv",
     "metric_name": "logloss",
-    "final_loss": 0.000777144330637632,
-    "train_time": 11.19874095916748,
+    "final_loss": 0.0005809154239251171,
+    "train_time": 20.860015630722046,
     "is_stacked": false,
-    "threshold": 0.49998475919276386
+    "threshold": 0.4999035413350909
 }

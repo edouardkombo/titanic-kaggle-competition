@@ -1,10 +1,15 @@
 {
     "columns": [
         "Survived",
+        "Pclass",
+        "Name",
         "Sex",
+        "Age",
         "SibSp",
         "Parch",
+        "Ticket",
         "Fare",
+        "Cabin",
         "Embarked",
         "Rich",
         "Poor",
@@ -15,18 +20,32 @@
         "FamilySize",
         "FamilyCombo",
         "Title",
+        "Probability",
         "TitleEmbarkedSelection",
         "TicketCategory"
     ],
     "rows": 472,
-    "cols": 17,
+    "cols": 23,
     "target_is_numeric": true,
     "columns_info": {
         "Survived": [
             "categorical",
             "categorical_to_int"
         ],
+        "Pclass": [
+            "categorical",
+            "categorical_to_onehot"
+        ],
+        "Name": [
+            "categorical",
+            "categorical_to_int"
+        ],
         "Sex": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "Age": [
+            "missing_values",
             "categorical",
             "categorical_to_int"
         ],
@@ -38,7 +57,16 @@
             "categorical",
             "categorical_to_onehot"
         ],
+        "Ticket": [
+            "categorical",
+            "categorical_to_int"
+        ],
         "Fare": [
+            "categorical",
+            "categorical_to_int"
+        ],
+        "Cabin": [
+            "missing_values",
             "categorical",
             "categorical_to_int"
         ],
@@ -82,6 +110,10 @@
         "Title": [
             "categorical",
             "categorical_to_onehot"
+        ],
+        "Probability": [
+            "categorical",
+            "categorical_to_int"
         ],
         "TitleEmbarkedSelection": [
             "categorical",
